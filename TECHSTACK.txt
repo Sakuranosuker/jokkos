@@ -1,0 +1,2 @@
+NODE JS -- For javascript backend.
+Shadcn/UI -- For getting premade ui components.
