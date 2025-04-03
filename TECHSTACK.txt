@@ -1,2 +1,7 @@
 NODE JS -- For javascript backend.
 Shadcn/UI -- For getting premade ui components.
+UIs downloaded from shadcn -- add badge calendar card checkbox drawer dropdown-menu input popover progress select switch table tooltip 
+Font from Google added -- Bodoni_Moda
+Header and Footer space added. -- <main> tag helps to find where the main content is.
+Clerk -- used for user login space.
+Update the middleware file for protecting certain pages from being accessed before sign in.
