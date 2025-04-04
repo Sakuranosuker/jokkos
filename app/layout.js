@@ -16,12 +16,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${bodoni.className}`}>
          {/* header */} 
-          <header className="bg-black py-5">
-           <div className="container mx-auto px-4 text-white text-center">
-             <h1 className="text-4xl font-bold">JOKKOS</h1>
-             <p className="text-lg">Financial management for everyday life</p>
-           </div>
-           </header>
            <Header />
          {/* main content */}
          <main className="min-h-screen"> 
