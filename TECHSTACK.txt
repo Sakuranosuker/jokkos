@@ -5,3 +5,8 @@ Font from Google added -- Bodoni_Moda
 Header and Footer space added. -- <main> tag helps to find where the main content is.
 Clerk -- used for user login space.
 Update the middleware file for protecting certain pages from being accessed before sign in.
+Make an AUTH file along with its layout.
+Customize the header + logo + adding proper dashboard and transaction buttons.
+DATABASE - with Supabase + prisma framework.
+Security - Arcjet.
+Inngest - Queuing Scheduling cron jobs etc.
