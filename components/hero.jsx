@@ -48,7 +48,6 @@ const HeroSection = () => {
             Get Started
           </Link>
         </div>
-        <div div className="hero-image-wrapper">
         <div ref={imageRef} className="hero-image">
           <Image
             src="/banner.jpg"
@@ -57,7 +56,6 @@ const HeroSection = () => {
             height={720}
             className="rounded-lg shadow-2xl border mx-auto"
           />
-        </div>
         </div>
       </div>
     </div>

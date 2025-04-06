@@ -1,11 +1,14 @@
 import HeroSection from "@/components/hero"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { featuresData, howItWorksData, statsData } from "@/data/landing"
+import { featuresData, howItWorksData, statsData, testimonialsData } from "@/data/landing"
+import Image from "next/image"
+import Link from "next/link"
 export default function Home() {
   return (
       <div className="mt-40">
         <HeroSection />
-        <section className="bg-gray-100 py-20">
+        <section className="bg-gray-200 py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {statsData.map((statsData,index)=> (
@@ -37,7 +40,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-gray-100 py-20">
+        <section className="bg-gray-200 py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-16">
               How It Works
@@ -52,6 +55,54 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-16">
+              What our Users Say
+              </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {testimonialsData.map((testimonial, index) => (
+                <Card key={index} className="p-6">
+                <CardContent className="pt-4">
+                  <div className="flex items-center mb-4">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={40}
+                      height={40}
+                      className="rounded-full"/>
+                      <div className="ml-4">
+                        <div className="font-bold text-amber-900">
+                          {testimonial.name}
+                        </div>
+                        <div className="text-sm text-amber-900">
+                          {testimonial.role}
+                        </div>
+                      </div>
+                  </div>
+                  <p className="text-gray-900">{testimonial.quote}</p>
+                </CardContent>
+              </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="py-20 bg-gray-700 text-white">
+          <div className="container mx-auto px-4 text-center ">
+            <h2 className="text-3xl font-bold text-center mb-4">
+              Ready to Take Control of Your Finances?
+              </h2>
+              <p className="text-white text-center mb-8 max-w-2xl mx-auto">
+                Join thousands of users who are already managing their finances daily.
+              </p>
+              <Link href={"/dashboard"}>
+              <Button size="lg" className="bg-white text-black px-6 py-4 rounded-md text-lg
+                 hover:bg-amber-200 transition duration-300 animate-bounce">
+                Start Free Trial
+              </Button>
+              </Link>
           </div>
         </section>
       </div>
