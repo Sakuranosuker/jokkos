@@ -10,3 +10,8 @@ Customize the header + logo + adding proper dashboard and transaction buttons.
 DATABASE - with Supabase + prisma framework.
 Security - Arcjet.
 Inngest - Queuing Scheduling cron jobs etc.
+Landing page crated, heading created, hero element created for landing page.
+Database created with prisma. Tables modelled in the schema.prisma file. and then prisma automatically creates them.
+Started creation of Dashboard+Accounts+Transaction page + layout of them(main)
+React-hook-form for managing forms and Zod added + hookforms/resolvers.
+Sonner added for Toaster. date fns added for managing dates.
