@@ -30,7 +30,7 @@ const HeroSection = () => {
     <div className="pb-20 px-4">
       <div className="flex flex-col items-center justify-center gap-5 text-center mt-20">
         <h1 className="text-5xl md:text-8xl lg:text-[105px] pb-6 bg-gradient-to-r from-yellow-600 to-amber-900 bg-clip-text text-transparent font-bold">
-          Finanacial Management
+          Financial Management
           <br /> with Intelligence
         </h1>
         <p className="text-xl text-gray-900 mb-4 max-w-2xl mx-auto">

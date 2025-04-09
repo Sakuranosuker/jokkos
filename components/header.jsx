@@ -10,20 +10,20 @@ const Header = async () => {
   
   return (
     <div className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b">
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
+      <nav className="container mx-auto px-2 sm:px-4 py-2 sm:py-4 flex items-center justify-between">
+        <div className="flex items-center space-x-2 sm:space-x-4">
           <Link href="/">
             <Image
               src={"/Logo.png"}
               alt="Jokkos Logo"
-              height={200}
-              width={200}
-              className="h-15 w-auto object-contain"
+              height={100}
+              width={100}
+              className="h-10 sm:h-15 w-auto object-contain"
             />
           </Link>
-          <h1 className="text-6xl font-bold text-white">JOKKOS</h1>
+          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold text-white">JOKKOS</h1>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-4">
           <SignedIn>
             <Link href={"/dashboard"}>
               <Button
